@@ -1,14 +1,16 @@
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from { 
+    filter: blur(15px);
+    opacity: 0; }
+  to { 
+    filter: blur(0px);
+    opacity: 1; }
 }
 @keyframes slideUp {
     from {
         transform: translateY(300px);
-        opacity: 0;
     }
     to {
         transform: translateY(0);
-        opacity: 1;
     }
 }
