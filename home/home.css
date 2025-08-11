@@ -70,4 +70,12 @@ body {
     object-fit: contain;
     z-index: 500;
     animation: slideUp 0.8s cubic-bezier(.25,.1,.25,1);
+    transition: all 0.2s cubic-bezier(0.1, 0.74, 0.74, 1);
+}
+
+.corner-image:hover {
+    right: 42.5px;
+    max-width: 165px;
+    max-height: 165px;
+    transition: all 0.2s cubic-bezier(0.1, 0.74, 0.74, 1);
 }

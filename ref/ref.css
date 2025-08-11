@@ -21,7 +21,18 @@ body {
     padding-left: 200px;
 }
 
-.about .a1 {
+.about .icon {
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    scale: 1 1;
+    opacity: 0;
+    width: 28px;
+    transition: all 0.2s ease;
+    animation: fadeOut 0.2s ease;
+}
+
+.about .a1{
     animation: slideUp 0.8s cubic-bezier(.25,.1,.25,1);
 }
 .about .a2 {
@@ -33,22 +44,38 @@ body {
 
 .about a {
     text-decoration: none;
-    color: #111111;
-    max-width: 75vh;
-    font-size: 30px;
-    font-weight: 700;
-    transition: all 0.5s cubic-bezier(0.1, 0.74, 0.74, 1);
-}
-
-.about a:hover {
-    text-decoration: none;
     color: #444444;
     max-width: 75vh;
     font-size: 30px;
     font-weight: 700;
-    transition: all 0.5s cubic-bezier(0.1, 0.74, 0.74, 1);
+    scale: 1 1;
+    transition: all 0.3s ease;
 }
 
+.about a:hover{
+    scale: 1.2 1.05;
+    transition: all 0.3s ease;
+}
+.about .a1:hover{
+    color: #1C1C1C;
+}
+.about .a2:hover{
+    color: #42AAFF;
+}
+.about .a3:hover{
+    color: #003153;
+}
+
+.about a:hover .icon{
+    animation: fadeIn 0.4s ease;
+    scale: 0.9 0.95;
+    left: 105%;
+    opacity: 1;
+    transition: all 0.4s ease;
+}
+.about .a2:hover .icon{
+    left: -25%;
+}
 
 .menu {
     position: fixed;
@@ -92,4 +119,11 @@ body {
     object-fit: contain;
     z-index: 500;
     animation: slideUp 0.8s cubic-bezier(.25,.1,.25,1);
+    transition: all 0.2s cubic-bezier(0.1, 0.74, 0.74, 1);
+}
+
+.corner-image:hover {
+    max-width: 215px;
+    max-height: 215px;
+    transition: all 0.2s cubic-bezier(0.1, 0.74, 0.74, 1);
 }
