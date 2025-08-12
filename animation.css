@@ -6,6 +6,14 @@
     filter: blur(0px);
     opacity: 1; }
 }
+@keyframes scaleIn {
+  from { 
+    scale: 0;
+   }
+  to {
+    scale: 1;
+   }
+}
 @keyframes fadeOut {
   from { 
     filter: blur(0px);
